@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="35sp"
+    android:orientation="horizontal"
+    tools:ignore="ExtraText"><![CDATA[]]>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:id="@+id/profile_pic"
+            android:src="@drawable/userfemale"/>
+
+        <TextView
+            android:id="@+id/firstName_et"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caitlyn"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="90dp"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/lastName_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delos Santos"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/firstName_et"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:id="@+id/profile_pica"
+            android:layout_below="@+id/profile_pic"
+            android:layout_marginTop="20sp"
+            android:src="@drawable/usermale"
+            tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/firstName_it"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gemrod"
+            android:textSize="15sp"
+            android:layout_marginTop="82dp"
+            android:layout_below="@+id/firstName_et"
+            android:layout_marginStart="90dp"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/lastName_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Triunfo"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="82dp"
+            android:layout_below="@+id/lastName_et"
+            android:layout_toEndOf="@id/firstName_it"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
